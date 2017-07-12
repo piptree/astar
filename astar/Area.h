@@ -1,0 +1,4 @@
+class Area
+{
+	virtual ~Area();
+};

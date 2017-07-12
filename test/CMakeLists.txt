@@ -13,6 +13,7 @@ include_directories(${GTestSrc} ${GTestSrc}/include ${GMockSrc} ${GMockSrc}/incl
 
 set(test_SOURCES
 		main.cpp
+		NodeTest.cpp
 		)
 
 set(test_HEADERS
@@ -21,4 +22,4 @@ set(test_HEADERS
 
 add_executable(pipTest ${test_SOURCES} ${test_HEADERS} ${GTestSrc}/src/gtest-all.cc ${GMockSrc}/src/gmock-all.cc)
 
-target_link_libraries(pipTest pthread)
+target_link_libraries(pipTest astar pthread)
