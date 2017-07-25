@@ -9,11 +9,13 @@ if (EXISTS ${googleTest_Dir})
 else ()
 	message(FATAL_ERROR "No googletest src dir found!")
 endif ()
-include_directories(${GTestSrc} ${GTestSrc}/include ${GMockSrc} ${GMockSrc}/include ${CMAKE_HOME_DIRECTORY})
+include_directories(${GTestSrc} ${GTestSrc}/include ${GMockSrc} ${GMockSrc}/include ${CMAKE_HOME_DIRECTORY} ${CMAKE_HOME_DIRECTORY}/test )
 
 set(test_SOURCES
 		main.cpp
-		NodeTest.cpp
+
+		astar/NodeTest.cpp
+		astar/NodeListTest.cpp
 		)
 
 set(test_HEADERS

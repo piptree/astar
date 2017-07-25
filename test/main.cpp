@@ -1,4 +1,3 @@
-#pragma once
 #include "StandardInclude.h"
 
 int main(int argc, char **argv)

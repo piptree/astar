@@ -4,11 +4,13 @@ project(astar)
 
 set(astar_HEADERS
 		Node.h
+		NodeList.h
 		Area.h
 		)
 
 set(astar_SOURCES
 		Node.cpp
+		NodeList.cpp
 		Area.cpp
 		)
 
